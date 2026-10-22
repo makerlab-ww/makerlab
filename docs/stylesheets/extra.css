@@ -1,7 +1,19 @@
-/* 왼쪽 목차: 절 항목 들여쓰기 + 폭 확대 (넓은 화면에서만) */
+/* 전체 폭: Material 기본 61rem보다 넓게 */
+.md-grid {
+  max-width: 70rem;
+}
+
+/* 오른쪽 목차 폭 (기본 12.1rem) */
+@media screen and (min-width: 60em) {
+  .md-sidebar--secondary {
+    width: 11.5rem;
+  }
+}
+
+/* 왼쪽 목차: 절 항목 들여쓰기 + 폭 조정 (넓은 화면에서만) */
 @media screen and (min-width: 76.25em) {
   .md-sidebar--primary {
-    width: 17rem;
+    width: 14rem;
   }
 
   /* Material이 목차 본체 폭을 11.5rem으로 고정하므로(padding-right) 풀어 준다 */
