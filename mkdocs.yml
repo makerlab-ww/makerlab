@@ -1,0 +1,37 @@
+site_name: 메이커랩 웹교재
+site_url: https://makerlab-ww.github.io/makerlab/
+repo_url: https://github.com/makerlab-ww/makerlab
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: ko
+  font:
+    text: Noto Sans KR
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.expand
+    - navigation.indexes
+    - navigation.footer
+    - content.code.copy
+    - content.action.edit
+    - search.suggest
+
+extra_css:
+  - stylesheets/extra.css
+
+plugins:
+  - search
+
+nav:
+  - 홈: index.md
+  - 3D 모델링:
+      - modeling/index.md
+      - I. 3D 모델링:
+          - 1장 시작하기:
+              - modeling/ch1-start/01-install.md
+              - modeling/ch1-start/02-interface.md
+              - modeling/ch1-start/03-project-units.md
+      # TODO: II. 3D 프린팅 (7장 출력하기) — 7장 페이지를 만들 때 추가

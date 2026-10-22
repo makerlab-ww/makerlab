@@ -1,0 +1,35 @@
+/* 왼쪽 목차: 절 항목 들여쓰기 + 폭 확대 (넓은 화면에서만) */
+@media screen and (min-width: 76.25em) {
+  .md-sidebar--primary {
+    width: 17rem;
+  }
+
+  /* Material이 목차 본체 폭을 11.5rem으로 고정하므로(padding-right) 풀어 준다 */
+  [dir="ltr"] .md-sidebar--primary .md-sidebar__inner {
+    padding-right: 0;
+  }
+
+  /* Material 기본값(-0.6rem)이 들여쓰기를 상쇄하므로 되돌린다 */
+  [dir="ltr"] .md-nav--primary .md-nav__item--section > .md-nav {
+    margin-left: 0;
+  }
+
+  .md-nav--primary .md-nav__item--section > .md-nav > .md-nav__list {
+    padding-left: 0.8rem;
+  }
+
+  .md-nav--primary .md-nav__item--section .md-nav__item .md-nav__link {
+    font-size: 0.62rem;
+  }
+}
+
+/* 절 구성 제목(학습 목표·학습내용·영상) 굵게 */
+.md-typeset h2 {
+  font-weight: 700;
+}
+
+/* 본문 목록 왼쪽 들여쓰기 (Material의 [dir] 선택자보다 앞서도록 맞춤) */
+[dir="ltr"] .md-typeset ul,
+[dir="ltr"] .md-typeset ol {
+  margin-left: 2em;
+}

@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(git ls-remote https://github.com/makerlab-ww/makerlab.git 2>&1 | Select-Object -First 3; \"exit: $LASTEXITCODE\")",
+      "PowerShell($out=\"C:\\\\Users\\\\user\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-user-Documents-makerlab\\\\ea1c59b6-b61e-4fb9-a9f2-248703c0bc7f\\\\scratchpad\\\\site-test\"; .\\\\.venv\\\\Scripts\\\\python.exe -m mkdocs build --site-dir $out 2>&1 | Select-String -NotMatch '│'; Select-String -Path \"$out\\\\modeling\\\\ch1-start\\\\01-install\\\\index.html\" -Pattern 'edit/main/docs' -SimpleMatch | Select-Object -First 1 | ForEach-Object { $_.Line.Trim\\(\\).Substring\\(0,[Math]::Min\\(200,$_.Line.Trim\\(\\).Length\\)\\) })",
+      "PowerShell(git init -b main)",
+      "PowerShell(git config user.name \"makerlab-ww\")",
+      "PowerShell(git config user.email \"125532838+makerlab-ww@users.noreply.github.com\")",
+      "PowerShell(git remote add origin https://github.com/makerlab-ww/makerlab.git)",
+      "PowerShell(git config --local --get user.name)",
+      "PowerShell(git config --local --get user.email)",
+      "PowerShell(git add -A -n)",
+      "PowerShell(git add -A)"
+    ]
+  }
+}
