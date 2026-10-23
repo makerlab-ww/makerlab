@@ -18,7 +18,8 @@ Autodesk Fusion은 3D 모델을 설계하는 프로그램입니다. 스케치를
 교육용 플랜은 기능 제한이 없고 1년 동안 무료로 쓸 수 있습니다.
 
 ### (3) 학생 인증하기
-1. [autodesk.com/eligibility](https://www.autodesk.com/eligibility)에 접속합니다.
+1.https://www.autodesk.com/kr(https://www.autodesk.com/kr)에 접속합니다.
+2. 지원>교육지원> 제품 엑세스 권한 얻기> FUSION <선택> 클릭
 2. **학생**을 선택합니다.
 3. 학생 인증을 진행합니다.
 4. 학생인증 서류는 행정실에서 '재학증명서'를 발급받아 제출합니다.
